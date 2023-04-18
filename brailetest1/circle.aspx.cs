@@ -13,5 +13,10 @@ namespace brailetest1
         {
 
         }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
