@@ -6,12 +6,12 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="height: 671px">
     <form id="form1" runat="server">
         <div>
         </div>
         Enter Width
-        <asp:TextBox ID="TextBox2" runat="server" Height="39px" style="margin-left: 26px" Width="212px"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Height="39px" style="margin-left: 13px" Width="212px"></asp:TextBox>
 &nbsp;&nbsp; Enter Height
         <asp:TextBox ID="TextBox3" runat="server" Height="39px" style="margin-left: 26px" Width="212px"></asp:TextBox>
         <p>
@@ -27,11 +27,10 @@
         <p>
             &nbsp;</p>
         <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
             Result :<asp:TextBox ID="TextBox9" runat="server" Height="79px" style="margin-left: 26px; margin-right: 41px" Width="228px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="232px" ImageUrl="~/img/rectangle.png" Width="340px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
     </form>
     
