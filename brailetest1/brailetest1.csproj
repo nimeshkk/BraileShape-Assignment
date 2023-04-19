@@ -73,6 +73,7 @@
     <Content Include="Connected Services\brailleservice\brailetest1.brailleservice.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="rectangle.aspx" />
     <None Include="Connected Services\brailleservice\WebService1.disco" />
     <None Include="Connected Services\brailleservice\configuration91.svcinfo" />
     <None Include="Connected Services\brailleservice\configuration.svcinfo" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rectangle.aspx.cs">
+      <DependentUpon>rectangle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rectangle.aspx.designer.cs">
+      <DependentUpon>rectangle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
