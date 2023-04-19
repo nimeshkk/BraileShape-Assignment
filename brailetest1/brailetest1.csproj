@@ -83,9 +83,9 @@
     <Content Include="img\braileimg.jpg" />
     <Content Include="img\circle.jpg" />
     <Content Include="img\rectangle.png" />
+    <Content Include="img\triangle.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="rectangle.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="circle.aspx.cs">
@@ -107,13 +107,6 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="rectangle.aspx.cs">
-      <DependentUpon>rectangle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="rectangle.aspx.designer.cs">
-      <DependentUpon>rectangle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

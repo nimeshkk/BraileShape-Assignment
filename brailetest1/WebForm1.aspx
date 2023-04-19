@@ -203,7 +203,7 @@ section{
                         <button class="dropbtn">Select Shape</button>
                         <div class="dropdown-content">
                         <a href="circle.aspx">Circle</a>
-                        <a href="rectangle.aspx">Rectangle</a>
+                        <a href="#">Rectangle</a>
                         <a href="#">Triangle</a>
                         </div>
                       </div>

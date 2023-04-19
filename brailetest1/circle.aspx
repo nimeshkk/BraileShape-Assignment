@@ -20,7 +20,7 @@
             Enter Radius<asp:TextBox ID="TextBox1" runat="server" Height="30px" style="margin-left: 72px" Width="236px"></asp:TextBox>
             &nbsp;
             <br />
-            Enter Text<asp:TextBox ID="TextBox2" runat="server" Height="53px" style="margin-left: 92px; margin-top: 20px" Width="552px"></asp:TextBox>
+            Enter Text<asp:TextBox ID="TextBox2" runat="server" Height="53px" OnTextChanged="TextBox2_TextChanged" style="margin-left: 92px; margin-top: 20px" Width="552px"></asp:TextBox>
             &nbsp;<br />
             <br />
             <br />
