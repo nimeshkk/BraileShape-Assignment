@@ -18,9 +18,26 @@ namespace brailleservice
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public double CalculatePerimeter(double radius)
         {
-            return "Hello World";
+            double perimeter = 2 * Math.PI * radius;
+            return perimeter;
         }
+
+        [WebMethod]
+        public double CalculatePerimeter(double side1, double side2, double side3)
+        {
+            double perimeter = side1 + side2 + side3;
+            return perimeter;
+        }
+
+        [WebMethod]
+        public double CalculatePerimeter(double length, double width)
+        {
+            double perimeter = 2 * (length + width);
+            return perimeter;
+        }
+
     }
 }
+
