@@ -122,7 +122,7 @@ section{
   position: relative;
   display: inline-block;
   margin-top: 10px;
-  margin-left: 800px;
+  margin-left: 200px;
 }
 
 .dropdown-content {
@@ -196,7 +196,7 @@ section{
     <section class="home" id="home">
            
 
-              <div class="box" style="background: url(img/braileimg.jpg) no-repeat;">
+              <div class="box" style="background: url(img/pexels3.jpg) no-repeat;">
                 <div class="content">
                    
                     <div class="dropdown">
