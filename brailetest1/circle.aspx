@@ -22,7 +22,7 @@
     </style>
 </head>
 <body style="height: 687px; width: 1374px">
-     <div class="box" style="background: url(img/photo1.jpg) no-repeat;">
+     <div class="box" style="background: url(img/pexels2.jpg) no-repeat;">
     <form id="form1" runat="server">
         <p>
             &nbsp;</p>
