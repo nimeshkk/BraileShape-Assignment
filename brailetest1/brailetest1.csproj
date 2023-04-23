@@ -76,6 +76,7 @@
     <Content Include="img\pexels2.jpg" />
     <Content Include="img\pexels3.jpg" />
     <Content Include="img\photo1.jpg" />
+    <Content Include="img\reactangle.jpg" />
     <Content Include="rectangle.aspx" />
     <None Include="Connected Services\brailleservice\WebService1.disco" />
     <None Include="Connected Services\brailleservice\configuration91.svcinfo" />
@@ -86,8 +87,8 @@
     </None>
     <Content Include="img\braileimg.jpg" />
     <Content Include="img\circle.jpg" />
-    <Content Include="img\rectangle.png" />
     <Content Include="img\triangle.png" />
+    <Content Include="triangle.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -105,6 +106,13 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="triangle.aspx.cs">
+      <DependentUpon>triangle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="triangle.aspx.designer.cs">
+      <DependentUpon>triangle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -13,5 +13,27 @@ namespace brailetest1
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            double width = Convert.ToDouble(TextBox2.Text);
+            double height = Convert.ToDouble(TextBox3.Text);
+
+            double rectangle = 2 * (width+height);
+
+            TextBox4.Text = rectangle.ToString();
+
+            double rectangleink = (rectangle*10*0.005)/3;
+
+            TextBox5.Text = rectangleink.ToString();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+        }
     }
 }
