@@ -70,9 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="circle.aspx" />
-    <Content Include="Connected Services\brailleservice\brailetest1.brailleservice.HelloWorldResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="img\pexels2.jpg" />
     <Content Include="img\pexels3.jpg" />
     <Content Include="img\photo1.jpg" />

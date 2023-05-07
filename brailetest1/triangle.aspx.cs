@@ -16,27 +16,21 @@ namespace brailetest1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(TextBox1.Text);
-            double b = Convert.ToDouble(TextBox2.Text);
-            double c = Convert.ToDouble(TextBox3.Text);
 
+            brailleservice.WebService1SoapClient client = new brailleservice.WebService1SoapClient();
 
-            double triangle = a+b+c;
+            double Result = client.CalculateTrianglePerimeter(Convert.ToDouble(TextBox1.Text), Convert.ToDouble(TextBox2.Text), Convert.ToDouble(TextBox3.Text));
+            
+            TextBox4.Text = Result.ToString();
 
-            TextBox4.Text = triangle.ToString();
+            double dot = client.CircumferenceInk(Result);
 
-            double circumferenceink = (triangle * 0.005 * 10) / 3;
+            TextBox5.Text = dot.ToString();
 
-            TextBox5.Text = circumferenceink.ToString();
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
            
         }
     }

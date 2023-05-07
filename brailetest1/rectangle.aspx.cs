@@ -16,24 +16,20 @@ namespace brailetest1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            double width = Convert.ToDouble(TextBox2.Text);
-            double height = Convert.ToDouble(TextBox3.Text);
+            brailleservice.WebService1SoapClient client = new brailleservice.WebService1SoapClient();
 
-            double rectangle = 2 * (width+height);
+            double Result = client.CalculateRectanglePerimeter(Convert.ToDouble(TextBox2.Text), Convert.ToDouble(TextBox3.Text));
 
-            TextBox4.Text = rectangle.ToString();
+            TextBox4.Text = Result.ToString();
 
-            double rectangleink = (rectangle*10*0.005)/3;
+            double dot = client.CircumferenceInk(Result);
 
-            TextBox5.Text = rectangleink.ToString();
+            TextBox5.Text = dot.ToString();
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
+            
         }
     }
 }

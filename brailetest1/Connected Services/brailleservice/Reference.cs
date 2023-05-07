@@ -15,73 +15,29 @@ namespace brailetest1.brailleservice {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="brailleservice.WebService1Soap")]
     public interface WebService1Soap {
         
-        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        brailetest1.brailleservice.HelloWorldResponse HelloWorld(brailetest1.brailleservice.HelloWorldRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateCircumference", ReplyAction="*")]
+        double CalculateCircumference(double radius);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        System.Threading.Tasks.Task<brailetest1.brailleservice.HelloWorldResponse> HelloWorldAsync(brailetest1.brailleservice.HelloWorldRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldRequest {
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateCircumference", ReplyAction="*")]
+        System.Threading.Tasks.Task<double> CalculateCircumferenceAsync(double radius);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
-        public brailetest1.brailleservice.HelloWorldRequestBody Body;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CircumferenceInk", ReplyAction="*")]
+        double CircumferenceInk(double ink);
         
-        public HelloWorldRequest() {
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CircumferenceInk", ReplyAction="*")]
+        System.Threading.Tasks.Task<double> CircumferenceInkAsync(double ink);
         
-        public HelloWorldRequest(brailetest1.brailleservice.HelloWorldRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class HelloWorldRequestBody {
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateTrianglePerimeter", ReplyAction="*")]
+        double CalculateTrianglePerimeter(double side1, double side2, double side3);
         
-        public HelloWorldRequestBody() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldResponse {
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateTrianglePerimeter", ReplyAction="*")]
+        System.Threading.Tasks.Task<double> CalculateTrianglePerimeterAsync(double side1, double side2, double side3);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
-        public brailetest1.brailleservice.HelloWorldResponseBody Body;
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateRectanglePerimeter", ReplyAction="*")]
+        double CalculateRectanglePerimeter(double length, double width);
         
-        public HelloWorldResponse() {
-        }
-        
-        public HelloWorldResponse(brailetest1.brailleservice.HelloWorldResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class HelloWorldResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string HelloWorldResult;
-        
-        public HelloWorldResponseBody() {
-        }
-        
-        public HelloWorldResponseBody(string HelloWorldResult) {
-            this.HelloWorldResult = HelloWorldResult;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CalculateRectanglePerimeter", ReplyAction="*")]
+        System.Threading.Tasks.Task<double> CalculateRectanglePerimeterAsync(double length, double width);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -111,27 +67,36 @@ namespace brailetest1.brailleservice {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        brailetest1.brailleservice.HelloWorldResponse brailetest1.brailleservice.WebService1Soap.HelloWorld(brailetest1.brailleservice.HelloWorldRequest request) {
-            return base.Channel.HelloWorld(request);
+        public double CalculateCircumference(double radius) {
+            return base.Channel.CalculateCircumference(radius);
         }
         
-        public string HelloWorld() {
-            brailetest1.brailleservice.HelloWorldRequest inValue = new brailetest1.brailleservice.HelloWorldRequest();
-            inValue.Body = new brailetest1.brailleservice.HelloWorldRequestBody();
-            brailetest1.brailleservice.HelloWorldResponse retVal = ((brailetest1.brailleservice.WebService1Soap)(this)).HelloWorld(inValue);
-            return retVal.Body.HelloWorldResult;
+        public System.Threading.Tasks.Task<double> CalculateCircumferenceAsync(double radius) {
+            return base.Channel.CalculateCircumferenceAsync(radius);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<brailetest1.brailleservice.HelloWorldResponse> brailetest1.brailleservice.WebService1Soap.HelloWorldAsync(brailetest1.brailleservice.HelloWorldRequest request) {
-            return base.Channel.HelloWorldAsync(request);
+        public double CircumferenceInk(double ink) {
+            return base.Channel.CircumferenceInk(ink);
         }
         
-        public System.Threading.Tasks.Task<brailetest1.brailleservice.HelloWorldResponse> HelloWorldAsync() {
-            brailetest1.brailleservice.HelloWorldRequest inValue = new brailetest1.brailleservice.HelloWorldRequest();
-            inValue.Body = new brailetest1.brailleservice.HelloWorldRequestBody();
-            return ((brailetest1.brailleservice.WebService1Soap)(this)).HelloWorldAsync(inValue);
+        public System.Threading.Tasks.Task<double> CircumferenceInkAsync(double ink) {
+            return base.Channel.CircumferenceInkAsync(ink);
+        }
+        
+        public double CalculateTrianglePerimeter(double side1, double side2, double side3) {
+            return base.Channel.CalculateTrianglePerimeter(side1, side2, side3);
+        }
+        
+        public System.Threading.Tasks.Task<double> CalculateTrianglePerimeterAsync(double side1, double side2, double side3) {
+            return base.Channel.CalculateTrianglePerimeterAsync(side1, side2, side3);
+        }
+        
+        public double CalculateRectanglePerimeter(double length, double width) {
+            return base.Channel.CalculateRectanglePerimeter(length, width);
+        }
+        
+        public System.Threading.Tasks.Task<double> CalculateRectanglePerimeterAsync(double length, double width) {
+            return base.Channel.CalculateRectanglePerimeterAsync(length, width);
         }
     }
 }

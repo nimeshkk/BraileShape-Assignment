@@ -18,21 +18,27 @@ namespace brailleservice
     {
 
         [WebMethod]
-        public double CalculatePerimeter(double radius)
+        public double CalculateCircumference(double radius)
         {
-            double perimeter = 2 * Math.PI * radius;
-            return perimeter;
+            double circumference = 2 * Math.PI * radius;
+            return circumference;
+        }
+        [WebMethod]
+        public double CircumferenceInk( double ink ) 
+        {
+            double circledot = (ink * 0.005 * 10) / 3;
+            return circledot;
         }
 
         [WebMethod]
-        public double CalculatePerimeter(double side1, double side2, double side3)
+        public double CalculateTrianglePerimeter(double side1, double side2, double side3)
         {
-            double perimeter = side1 + side2 + side3;
-            return perimeter;
+            double traingle = side1 + side2 + side3;
+            return traingle;
         }
 
         [WebMethod]
-        public double CalculatePerimeter(double length, double width)
+        public double CalculateRectanglePerimeter(double length, double width)
         {
             double perimeter = 2 * (length + width);
             return perimeter;

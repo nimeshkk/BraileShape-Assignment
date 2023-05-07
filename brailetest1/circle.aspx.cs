@@ -33,23 +33,22 @@ namespace brailetest1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            double radius = Convert.ToDouble(TextBox1.Text);
 
+            brailleservice.WebService1SoapClient client = new brailleservice.WebService1SoapClient();
 
-            double circumference = 2 * Math.PI * radius;
+            double Result = client.CalculateCircumference(Convert.ToDouble(TextBox1.Text));
 
-            TextBox7.Text = circumference.ToString();
+            TextBox7.Text = Result.ToString();
 
-            double circumferenceink = (2 * Math.PI * radius * 0.005 * 10) / 3;
+            double dot = client.CircumferenceInk(Result);
 
-            TextBox8.Text = circumferenceink.ToString();
+            TextBox8.Text = dot.ToString();
+
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            TextBox1.Text = "";
-            TextBox7.Text = "";
-            TextBox8.Text = "";
+           
         }
     }
 }
